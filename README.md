@@ -10,12 +10,14 @@ A CLI-first, local Markdown-based knowledge base & task management system built 
 
 Click **"Use this template"** → **"Create a new repository"** on GitHub.
 
+Repository name: `vault` recommended (or any name you prefer).
+
 <details>
 <summary>Manual setup (without GitHub)</summary>
 
 ```bash
-git clone https://github.com/r1cA18/memex.git my-memex
-cd my-memex
+git clone https://github.com/r1cA18/memex.git vault
+cd vault
 rm -rf .git
 git init
 git add .
@@ -27,7 +29,7 @@ git commit -m "Initial commit from memex template"
 ### 2. Setup Environment
 
 ```bash
-cd your-repo-name
+cd vault
 
 # With Nix (recommended)
 nix-shell
