@@ -76,3 +76,47 @@ Open the `memex/` directory as an Obsidian vault for:
 - Mobile access
 - Graph view
 - Visual editing
+
+## Updating
+
+When memex template updates (new skills, bug fixes, etc.), you can pull changes while keeping your data intact.
+
+### Setup (one-time)
+
+```bash
+# Add upstream remote
+git remote add upstream https://github.com/r1cA18/memex.git
+```
+
+### Pull Updates
+
+```bash
+# Fetch latest changes
+git fetch upstream
+
+# Merge (data folders won't conflict - they're gitignored in upstream)
+git merge upstream/main --allow-unrelated-histories
+```
+
+If conflicts occur, they'll be in system files (`.claude/`, `docs/`, etc.). Resolve by keeping upstream version for template files.
+
+### What Gets Updated
+
+| Updated (System) | Preserved (Data) |
+|------------------|------------------|
+| `.claude/skills/` | `Daily/` |
+| `.claude/rules/` | `Tasks/` |
+| `docs/` | `Knowledge/` |
+| `CLAUDE.md` | `Logs/` |
+| `*.nix`, `*.toml` | `Archive/` |
+
+### Manual Update (alternative)
+
+If you prefer not to merge:
+
+```bash
+# Download and overwrite specific files
+curl -O https://raw.githubusercontent.com/r1cA18/memex/main/CLAUDE.md
+curl -O https://raw.githubusercontent.com/r1cA18/memex/main/.claude/skills/daily-manager/SKILL.md
+# etc.
+```
