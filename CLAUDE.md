@@ -11,7 +11,7 @@ Local Markdown-based knowledge base & task management system. Daily pages serve 
 ## Directory Structure
 
 ```
-vault/
+memex/
 ├── Daily/          # Daily pages (hub) - YYYY/MM/YYYY-MM-DD.md
 ├── Tasks/          # Task management (status-based)
 │   ├── Inbox/      # Unprocessed

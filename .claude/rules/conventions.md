@@ -3,7 +3,7 @@ paths:
   - "**/*.md"
 ---
 
-# Vault Conventions
+# Memex Conventions
 
 ## Naming
 

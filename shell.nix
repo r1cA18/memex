@@ -1,7 +1,7 @@
 { pkgs ? import <nixpkgs> {} }:
 
 pkgs.mkShell {
-  name = "vault-dev";
+  name = "memex-dev";
 
   buildInputs = with pkgs; [
     # Python 3.12
