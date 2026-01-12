@@ -40,7 +40,19 @@ source .venv/bin/activate
 uv sync
 ```
 
-### 3. Start Using
+### 3. Register with basic-memory
+
+```bash
+# Register your vault directory (replace path with your actual location)
+uvx basic-memory project add memex /path/to/vault --default
+
+# Example:
+uvx basic-memory project add memex ~/vault --default
+```
+
+Then add basic-memory to your Claude Code MCP settings. See [Getting Started](docs/getting-started.md#mcp-setup) for details.
+
+### 4. Start Using
 
 ```bash
 claude  # Start Claude Code in your memex directory

@@ -30,7 +30,23 @@ basic-memory --version
 
 ## MCP Setup
 
-Add to your Claude Code MCP settings:
+### 1. Register Project
+
+Register your vault directory with basic-memory:
+
+```bash
+# Replace /path/to/vault with your actual vault path
+uvx basic-memory project add memex /path/to/vault --default
+```
+
+Example:
+```bash
+uvx basic-memory project add memex ~/vault --default
+```
+
+### 2. Configure Claude Code
+
+Add to your Claude Code MCP settings (`~/.claude/settings.json`):
 
 ```json
 {
@@ -44,11 +60,13 @@ Add to your Claude Code MCP settings:
 }
 ```
 
-Start file sync:
+### 3. Start File Sync
 
 ```bash
-basic-memory sync --watch --project memex
+uvx basic-memory sync --watch --project memex
 ```
+
+> **Note:** After configuring MCP, restart Claude Code (`/quit` and reopen) for changes to take effect.
 
 ## First Run
 
