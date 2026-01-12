@@ -4,14 +4,14 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-"The Programmable Knowledge Base for Hackers."
+"The Programmable Knowledge Base."
 
 Local Markdown-based knowledge base & task management system. Daily pages serve as the central hub for all activities.
 
 ## Directory Structure
 
 ```
-vault/
+memex/
 ├── Daily/          # Daily pages (hub) - YYYY/MM/YYYY-MM-DD.md
 ├── Tasks/          # Task management (status-based)
 │   ├── Inbox/      # Unprocessed

@@ -17,7 +17,7 @@ pkgs.mkShell {
   ];
 
   shellHook = ''
-    echo "vault development environment"
+    echo "memex development environment"
     echo "Python: $(python --version)"
     echo "uv: $(uv --version)"
     echo ""
