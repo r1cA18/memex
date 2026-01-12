@@ -1,0 +1,8 @@
+[project]
+name = "vault"
+version = "0.1.0"
+description = "The Programmable Knowledge Base for Hackers"
+requires-python = ">=3.12"
+dependencies = [
+    "basic-memory>=0.17.0",
+]
